@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Extractor</title>
+</head>
+<body>
+    <h1>Resume extractor</h1>
+    <form action="/process_resume" method="POST" enctype="multipart/form-data">
+        <input type="file" name="doc" accept=".pdf, .docx, .txt">
+        <br>
+        <p>
+            Select filetype:
+            <p>
+                .pdf<input type="radio" name="document_type" value="pdf">
+                <br>
+                .docx<input type="radio" name="document_type" value="docx">
+                <br>
+                .txt<input type="radio" name="document_type" value="txt">
+                <br>
+            </p>
+        </p>
+        <input type="submit">
+    </form>
+</body> 
+</html>
