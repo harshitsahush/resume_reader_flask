@@ -22,7 +22,7 @@ def temp2():
             text = file.read().decode("utf-8")
 
         query_res = query_response(text)
-        return query_res
+        return jsonify(json.loads(query_res))               #converts valid JSON string to JSON
 
     else:
         return render_template("resume_upload.html")
